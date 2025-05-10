@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kts Login Page</title>
+    <style>
+        *{
+           padding: 0;
+           margin: 0; 
+        }
+
+        /* Element selector */
+        body {
+            height: 100vh;
+            background: linear-gradient(to right, rgb(75, 151, 226), rgb(221, 113, 208));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* Class selector */
+        .login-box{
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 350px;
+        }
+
+      .login-box h2{
+            text-align: center;
+            margin-bottom: 20px;
+          
+        }
+
+        .login-box input{
+            width: 100%;
+            margin-bottom: 16px;
+            padding: 10px;
+            border: 1px solid rgb(196, 194, 194);
+            border-radius: 6px;
+            transition: border-color 0.3s;
+        }
+        /* psudo classes */
+        .login-box input:focus{
+            border-color: rgb(20, 132, 230);
+            outline: none;
+        }
+        .login-box button{
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(12, 55, 231);
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+        }
+
+          .login-box button:hover{
+            background-color: rgb(59, 95, 238);
+            
+            }
+          .login-box p{
+            margin-top: 20px;
+            text-align: center;
+            
+        }
+
+        .login-box p a{
+            text-decoration: none;
+            color: rgb(109, 136, 245);
+        }
+        .login-box p a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-box">
+        <h2>Login</h2>
+        <form action="">
+            <input type="text" placeholder="UserName" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+            <p>Don't have an account? <a href="">Sign up</a></p>
+        </form>
+    </div>
+</body>
+
+</html>
